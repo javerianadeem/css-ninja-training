@@ -34,7 +34,8 @@
     background-color: rgb(132, 57, 182);
 }
 .maindiv {
-    display: inline-flex;
+    display: flex;
     border: 2px solid brown;
-    height: 100vh;
+    height: 150vh;
+    flex-direction: column;
 }
