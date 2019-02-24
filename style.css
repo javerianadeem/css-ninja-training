@@ -35,15 +35,13 @@
 }
 .maindiv {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
 }
 .box1 {
-    padding-right: 20px;
+    flex: 1;
 }
 .box5 {
-    padding-right: 100px;
+    flex: 2;
 }
 .box8 {
-    padding-right: 300px;
+    flex: 3;
 }
