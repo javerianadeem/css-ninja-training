@@ -36,20 +36,5 @@
 .maindiv {
     display: flex;
     border: 10px solid rgb(38, 144, 38);
-    
-}
-.box {
-    flex: 1;
-}
-.box5 {
-    order:1;
-}
-.box10 {
-    order: 2;
-}
-.box2 {
-    order: -1;
-}
-.box7 {
-    order: -2
+    justify-content: center;
 }
