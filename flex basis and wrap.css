@@ -1,0 +1,31 @@
+.box {
+    text-align: center;
+    font-size: 50px;
+    padding: 2px;
+}
+.box1 {
+    background-color: blueviolet;
+}
+.box2 {
+    background-color: cadetblue;
+}
+.box3 {
+    background-color: crimson;
+    flex-grow: 3;
+}
+.box4 {
+    background-color: darkkhaki;
+}
+.box5 {
+    background-color: darkorange;
+    flex-basis: 200px;
+}
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.box {
+    flex-basis: 250px;
+}
