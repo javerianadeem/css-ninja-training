@@ -1,0 +1,27 @@
+div.intro {
+    text-align: center;
+    line-height: 10px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 185, 164);
+}
+.box1, .box2, .box3, .box4, .box5 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+.personalprof {
+    text-align: center;
+}
+li {
+    padding-left: 10px;
+}
+.work {
+    line-height: 5px;
+}
+
+.activity {
+    line-height: 5px;
+}
