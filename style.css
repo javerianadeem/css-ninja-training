@@ -35,11 +35,21 @@
 }
 .maindiv {
     display: flex;
-    border: 10px solid brown;
-    height: 150vh;
-    flex-wrap: wrap;
+    border: 10px solid rgb(38, 144, 38);
+    
 }
 .box {
-    width: calc(33% - 20px);
-    margin: 10px;
+    flex: 1;
+}
+.box5 {
+    order:1;
+}
+.box10 {
+    order: 2;
+}
+.box2 {
+    order: -1;
+}
+.box7 {
+    order: -2
 }
