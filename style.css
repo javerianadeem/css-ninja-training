@@ -35,7 +35,11 @@
 }
 .maindiv {
     display: flex;
-    border: 2px solid brown;
+    border: 10px solid brown;
     height: 150vh;
-    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+.box {
+    width: calc(33% - 20px);
+    margin: 10px;
 }
