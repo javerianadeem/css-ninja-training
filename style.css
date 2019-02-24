@@ -36,5 +36,5 @@
 .maindiv {
     display: flex;
     border: 10px solid rgb(38, 144, 38);
-    justify-content: center;
+    justify-content: space-evenly;
 }
