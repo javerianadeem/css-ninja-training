@@ -1,6 +1,6 @@
 .box {
     text-align: center;
-    font-size: 75px;
+    font-size: 50px;
     padding: 2px;
 }
 .box1 {
@@ -37,4 +37,6 @@
     display: flex;
     border: 10px solid rgb(38, 144, 38);
     justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 150vh;
 }
