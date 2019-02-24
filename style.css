@@ -36,17 +36,11 @@
 .maindiv {
     display: flex;
     border: 10px solid rgb(38, 144, 38);
+    flex-wrap: wrap;
+    align-content: center;
     min-height: 120vh;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
-.box1 {
-    font-size: 2em;
-}
-.box3 {
-    font-size: 1em;
-}
-.box8 {
-    font-size: 20px;
+.box {
+    width: 32%;
 }
