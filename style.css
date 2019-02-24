@@ -36,7 +36,7 @@
 .maindiv {
     display: flex;
     border: 10px solid rgb(38, 144, 38);
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     min-height: 150vh;
 }
