@@ -37,5 +37,5 @@
     display: flex;
     border: 2px solid brown;
     height: 150vh;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
