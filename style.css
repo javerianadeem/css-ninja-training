@@ -36,8 +36,10 @@
 .maindiv {
     display: flex;
     border: 10px solid rgb(38, 144, 38);
-    min-height: 100vh;
-    align-items: baseline;
+    min-height: 120vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .box1 {
     font-size: 2em;
