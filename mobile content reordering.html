@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="navBar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="mobile content reordering.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    <script src="main.js"></script>
 </head>
 <body>
@@ -16,8 +16,8 @@
         </header>
 
         <nav class="flex-nav">
-            <a href="#" class="toggleNav">MENU</a>
-            <ul>
+            <a href="#" class="menu">MENU</a>
+            <ul class="open">
                 <li><a href="#">Item 01</a></li>
                 <li><a href="#">Item 02</a></li>
                 <li><a href="#">Item 03</a></li>
@@ -55,8 +55,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
       $(function() {
-        $('.toggleNav').on('click',function() {
-          $('.flex-nav ul').toggleClass('open');
+        $('.menu').on('click',function() {
+         // $('.flex-nav ul').toggleClass('open');
+          $('.flex-nav ul').slideToggle();
         });
       });
     </script>
