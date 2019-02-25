@@ -1,4 +1,5 @@
 div.intro {
+    padding-top: 4px;
     text-align: center;
     line-height: 10px;
 }
@@ -24,4 +25,7 @@ li {
 
 .activity {
     line-height: 5px;
+}
+.cv {
+    background-color: rgb(236, 236, 190);
 }
