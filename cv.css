@@ -46,8 +46,8 @@ li {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-    display: block;
     border: 1px solid black;
+    display: flex;
 }
 .text {
     background-color: rgb(53, 199, 192);
