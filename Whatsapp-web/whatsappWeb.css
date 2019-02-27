@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+.fa-whatsapp {
+    color: white;
+    background-color: #25D366;
+    padding :5px;
+}
+header {
+    background-color: rgb(19, 194, 173);
+    display: flex;
+    justify-content: space-around;
+}
+.top {
+    max-height: 100px;
+}
+.top p {
+    color:white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+a, .dropdown {
+    color:white;
+    text-decoration: none;
+    padding:10px 2px;
+    display: inline-block;
+    transition:all 0.5s;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.dropdown {
+    color:white;
+    text-decoration: none;
+    padding:20px 5px;
+    display: inline-block;
+    transition:all 0.5s;
+}
+  /* Flex Container */
+.flex-nav ul, .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 194, 173);
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.flex-nav li {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+}
+.flex-nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+.dropdown {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+@media all and (max-width:1000px) {
+      /*
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+    .flex-nav li {
+        flex: 1 1 50%;
+    } */
+    .menu {
+        display: none;
+    }
+}
