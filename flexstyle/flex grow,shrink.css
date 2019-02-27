@@ -1,0 +1,20 @@
+.box {
+    text-align: center;
+    font-size: 50px;
+    padding: 2px;
+}
+.box1 {
+    background-color: rgb(4, 209, 89);
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.box2 {
+    background-color: rgb(36, 76, 187);
+    flex-basis: 400px;
+    flex-grow: 10;
+    flex-shrink: 10;
+}
+.maindiv {
+    display: flex;
+}
