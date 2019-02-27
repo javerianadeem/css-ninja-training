@@ -3,11 +3,13 @@ body {
     margin: 0;
     font-family: 'Segoe UI';
 }
+/* WHATSAPP ICON STYLING */
 .fa-whatsapp {
     color: white;
     background-color: #25D366;
     padding :5px;
 }
+/* STYLING HEADER */
 header {
     background-color: rgb(19, 194, 173);
     display: flex;
@@ -63,17 +65,68 @@ a, .dropdown {
     display: flex;
     align-content: center;
     align-items: center;
+    width:30%;
+}
 
+.menu {
+    display: none;
+}
+/* HEADER STYLING ENDS */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
 }
 @media all and (max-width:1000px) {
-      /*
-    .flex-nav ul {
-        flex-wrap: wrap;
-    }
     .flex-nav li {
-        flex: 1 1 50%;
-    } */
+        flex: 1 1 40%;
+    }
+}
+@media all and (max-width: 900px) {
+    #para {
+        display: none;
+    }
+    .flex-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(19, 194, 173);
+        width: 90%;
+        align-content: space-evenly;
+        align-items: center;
+    }
+}
+@media all and (max-width:600px) {
+    body {
+        background-color: rgb(19, 194, 173);
+    }
+    /*
+    .flex-nav li {
+        flex-basis: 100%;
+    }*/
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container > * {
+        order: 100;
+    }
+    .flex-nav ul {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+    .dropdown {
+        background-color: white;
+        color: black;
+    }
     .menu {
+        font-size: 1.3em;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+    .flex-nav ul {
         display: none;
     }
 }

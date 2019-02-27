@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="maindiv">
+    <div class="container">
 
         <header class="top">
             
             <nav class="flex-nav">
-                    <p><a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>WhatsApp</p>
-                  <!--  <a href="#" class="menu">MENU</a> -->
+                    <p id="para"><a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>WhatsApp</p>
+                    <a href="#" class="menu">☰</a>
                     <ul class="open">
                             <li><a href="#" class="headeroption">WHATSAPP WEB</a></li>
                             <li><a href="#" class="headeroption">FEATURES</a></li>
@@ -35,5 +35,14 @@
 
         
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('.menu').on('click',function() {
+         // $('.flex-nav ul').toggleClass('open');
+          $('.flex-nav ul').slideToggle();
+        });
+      });
+    </script>
 </body>
 </html>
