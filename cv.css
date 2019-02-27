@@ -32,6 +32,7 @@ li {
 .company {
     padding-left: 10px;
 }
+/*
 .text {
     position: fixed;
     background-color: rgb(53, 199, 192);
@@ -48,7 +49,7 @@ li {
     left: 470px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
-  }
+  } */
   .photodiv:hover .myphoto {
     opacity: 0.3;
   }
@@ -109,5 +110,4 @@ li {
     .intro {
         justify-content: end;
     }
-
 }
