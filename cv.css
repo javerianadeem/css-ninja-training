@@ -50,14 +50,14 @@ li {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
   } */
-  .photodiv:hover .myphoto {
+.photodiv:hover .myphoto {
     opacity: 0.3;
   }
 
-  .photodiv:hover .middle {
+.photodiv:hover .middle {
     opacity: 1;
   }
-  header{
+header{
     display: flex;
     justify-content: space-evenly;
 }
