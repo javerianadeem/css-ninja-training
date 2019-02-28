@@ -1,132 +1,146 @@
-body {
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
     background-color: white;
     margin: 0;
     font-family: 'Segoe UI';
-}
-/* WHATSAPP ICON STYLING */
+  }
+  /* WHATSAPP ICON STYLING */
 .fa-whatsapp {
+   text-align: left;
     color: white;
     background-color: #25D366;
     padding :5px;
-}
-/* STYLING HEADER */
-header {
-    background-color: rgb(19, 194, 173);
     display: flex;
-    justify-content: space-around;
 }
-.top {
+.top p{
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    
+    align-content: flex-end;
+}
+.top i {
+    background-color: #25D366;
+}
+header {
+    border: 2px solid purple;
+    background-color: rgb(19, 194, 173);
+    width: 100%;
     max-height: 100px;
 }
-.top p {
-    color:white;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-}
-a, .dropdown {
-    color:white;
-    text-decoration: none;
-    padding:10px 2px;
-    display: inline-block;
-    transition:all 0.5s;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-.dropdown {
-    color:white;
-    text-decoration: none;
-    padding:20px 5px;
-    display: inline-block;
-    transition:all 0.5s;
-}
-  /* Flex Container */
-.flex-nav ul, .dropdown {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(19, 194, 173);
-    width: 60%;
-    display: flex;
-    align-items: center;
-}
-.flex-nav li {
-    display:flex;
-    flex: 1;
-    justify-content: center;
+#para {
+    border: 2px solid red;
+    max-height: 45px;
 }
 .flex-nav {
     display: flex;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+/* HEADER HEIGHT */
+.headeroption, .menu {
+    color:white;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-decoration: none;
+    padding:20px 5px;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    transition:all 0.5s;
 }
 .dropdown {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    width:30%;
+    width: 40%;
+    transition:all 0.5s;
 }
-
-.menu {
-    display: none;
+  a:hover  {
+    background-color:rgba(0,0,0,0.3);
 }
-/* HEADER STYLING ENDS */
-.container {
-    max-width: 100%;
+  
+  
+  .maindiv {
+   /* max-width: 1000px;*/
     margin: 0 auto;
+  }
+  
+
+  
+  /* Flex Container */
+.flex-nav ul {
+    align-items: center;
+    background-color: rgb(19, 194, 173);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    display: flex;
+    width: 60%;
+    max-height: 95px;
 }
-@media all and (max-width:1000px) {
-    .flex-nav li {
-        flex: 1 1 40%;
-    }
+.flex-nav li {
+    flex: 1;
+   justify-content: center;
 }
-@media all and (max-width: 900px) {
-    #para {
-        display: none;
-    }
-    .flex-nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(19, 194, 173);
-        width: 90%;
-        align-content: space-evenly;
-        align-items: center;
-    }
-}
-@media all and (max-width:600px) {
-    body {
-        background-color: rgb(19, 194, 173);
-    }
-    /*
-    .flex-nav li {
-        flex-basis: 100%;
-    }*/
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    .container > * {
-        order: 100;
-    }
-    .flex-nav ul {
-        display: flex;
-        flex-direction: column;
-        order: 1;
-    }
-    .dropdown {
-        background-color: white;
-        color: black;
-    }
-    .menu {
-        font-size: 1.3em;
-        display: block;
-        position: absolute;
-        top: 5px;
-        right: 20px;
-    }
-    .flex-nav ul {
-        display: none;
-    }
-}
+/*
+  section, footer {
+    text-align: center;
+    background-color:rgba(0,0,0,0.2);
+    padding:20px;
+    margin:20px 0;
+    color:white;
+    font-weight: 100;
+  }
+  */
+  
+  @media all and (max-width:1000px) {
+      .flex-nav li {
+          flex: 1 1 50%;
+      }
+      .flex-nav {
+          width: 100%;
+      }
+ }
+  
+  @media all and (max-width:800px) {
+      .flex-nav ul {
+          max-height: 400px;
+      }
+      .dropdown {
+          width: 80%;
+      }
+      .flex-nav li {
+
+          flex-basis: 100%;
+      }
+      .maindiv {
+          display: flex;
+          flex-direction: column;
+      }
+      .maindiv > * {
+          order: 100;
+      }
+      .flex-nav {
+          order: 1;
+      }
+      .menu {
+          text-align: right;
+          display: block;
+      }
+      .flex-nav ul {
+          display: none;
+      }
+      .flex-nav ul.open {
+          display: flex;
+          flex-direction: column;
+      }
+
+  }
