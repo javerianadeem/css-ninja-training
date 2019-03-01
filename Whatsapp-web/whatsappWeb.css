@@ -36,6 +36,9 @@ header {
     background-color: rgb(19, 194, 173);
     width: 100%;
     max-height: 100px;
+    margin-bottom: 80px;
+    position: fixed;
+    top: 0;
 }
 #para {
     border: 2px solid red;
@@ -88,7 +91,10 @@ header {
 }
 .flex-nav li {
     flex: 1;
-   justify-content: center;
+    justify-content: center;
+}
+.menu {
+    display: none;
 }
 /*
   section, footer {
@@ -100,25 +106,76 @@ header {
     font-weight: 100;
   }
   */
-  
-  @media all and (max-width:1000px) {
+  /* Now the second part weekend image */
+.description {
+    border: 2px solid blue;
+    margin: 14%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.firstline {
+    font-size: 30px;
+}
+.secondline {
+    font-size: 15px;
+    color: gray;
+}
+.thirdline {
+    font-size: 13px;
+    color: rgb(214, 206, 206);
+    
+}
+.weekendimg {
+    border: 2px solid red;
+    height: 500px;
+}
+.paras {
+    border: 2px solid peru;
+}
+.icons a, .icons {
+    text-decoration: none;
+    color: rgb(19, 194, 173);
+    margin: 5px;
+}
+.icons a {
+    padding-left: 10px;
+}
+/* SECOND PART ENDS HERE */
+
+/*THIRD PART STARTS HERE */
+span.busapp {
+    color:rgb(99, 165, 187);
+}
+
+.businessapp {
+    background-color: lightblue;
+}
+@media all and (max-width:1000px) {
+      
       .flex-nav li {
           flex: 1 1 50%;
       }
       .flex-nav {
           width: 100%;
       }
- }
+      #whatsapplink {
+          display: none;
+      }
+}
   
   @media all and (max-width:800px) {
+      body {
+          background-color: rgb(19, 194, 173);
+      }
       .flex-nav ul {
-          max-height: 400px;
+          max-height: 100%;
+          width: 100%;
       }
       .dropdown {
           width: 80%;
       }
       .flex-nav li {
-
           flex-basis: 100%;
       }
       .maindiv {
@@ -132,7 +189,9 @@ header {
           order: 1;
       }
       .menu {
-          text-align: right;
+          position: absolute;
+          top: 0;
+          right: 10px;
           display: block;
       }
       .flex-nav ul {
@@ -142,5 +201,40 @@ header {
           display: flex;
           flex-direction: column;
       }
-
+      .description {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      }
+      .firstline {
+          color: white;
+          font-size: 1.5em;
+      }
+      .secondline {
+          color: white;
+      }
+      
+      .icons {
+          display: none;
+      }
+      .paras {
+          width: 100%;
+      }
+      .downloadnow {
+          color: white;
+          text-decoration: none;
+          background-color: #25D366;
+          border-radius: 20%;
+          padding: 20px;
+          margin: 5%;
+          display: flex;
+          order: 2;
+      }
+      .weekendimg {
+          order: 3;
+      }
+      .thirdline {
+          display: flex;
+        order: 5;
+    }
   }
