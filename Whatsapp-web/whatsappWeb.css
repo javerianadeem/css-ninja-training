@@ -56,8 +56,7 @@ header {/*
     text-decoration: none;
     padding:20px 5px;
     display: inline-flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column;  
 }
 .dropdown {
     width: 40%;
@@ -82,10 +81,14 @@ header {/*
     display: flex;
     width: 60%;
     max-height: 95px;
+    
 }
 .flex-nav li {
+    align-items: center;
     flex: 1;
-    justify-content: center;
+}
+.cent {
+    text-align: center;
 }
 .menu {
     display: none;
@@ -258,17 +261,21 @@ footer section{
     justify-content: center;
 }
 @media all and (max-width:1000px) {
-      /*
+       
       .flex-nav li {
           flex: 1 1 50%;
+          align-items: left;
       }
       .flex-nav {
           width: 100%;
-      }*/
+      }
       #whatsapplink {
           display: none;
       }
-      
+      .cent {
+        text-align: left;
+    }
+    
 }
   @media all and (max-width:800px) {
       body {
@@ -279,7 +286,6 @@ footer section{
           position: relative;
       }
       .flex-nav ul {
-          border: 2px solid red;
           max-height: 100%;
           width: 100%;
           display: block;
