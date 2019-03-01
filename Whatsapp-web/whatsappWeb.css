@@ -261,7 +261,7 @@ footer section{
     justify-content: center;
 }
 @media all and (max-width:1000px) {
-      
+       
       .flex-nav li {
           flex: 1 1 50%;
           align-items: left;
